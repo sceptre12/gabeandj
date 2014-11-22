@@ -1,0 +1,160 @@
+body,html{
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	padding:0;
+	margin: 0;
+
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*Carusel Css*/
+#hcover{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#hcover .carousel{
+	/*width: 100%;
+	min-height: 100%;*/
+}
+.item{
+	height: 100%;
+	width: 100%;
+}
+
+#hcover img{
+ 	width: 100%;
+ 	min-height: 100%;
+ 	min-height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+#hcover .carousel .item {
+    left: 0 !important;
+      -webkit-transition: opacity .7s; /*adjust timing here */
+         -moz-transition: opacity .7s;
+           -o-transition: opacity .7s;
+              transition: opacity .7s;
+}
+#hcover .carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+#hcover .next.left,
+#hcover .prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+#hcover .active.left,
+#hcover .active.right {
+    opacity: 0;
+    z-index: 2;
+}
+
+#bk1{
+	background: url('../img/img3mid.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 350px;
+}
+#bk2{
+	background: url('../img/img9mid.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 350px;
+}
+#bk3{
+	background: url('../img/img10mid.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 350px;
+}
+#bk4{
+	background: url('../img/img12mid.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 350px;
+}
+#pages {
+	overflow:hidden !important;
+}
+#pages{
+	position: relative;
+	width: 100%;
+}
+#pages div.col-sm-6{
+	padding-left: 0;
+	padding-right: 0;
+}
+.botcover{
+	background: #9B2F63;
+	width: 100%;
+	height: 400px;
+}
+footer{
+	background: #000000;
+	width: 100%;
+	height: 120px;
+}
+#pages #bk1, #bk2,#bk3,#bk4{
+	-webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -ms-animation-delay: .2s;
+    -o-animation-delay: .2s;
+}
+#bot{
+	overflow:hidden !important;
+}
+#overlay{
+	width: 100%;
+	min-height: 100%;
+	background: hsla(54, 5%, 15%, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8000;
+	opacity: 1;
+	transition: opacity .3s ease-in-out;
+}
+#pages #overlay:hover{
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
