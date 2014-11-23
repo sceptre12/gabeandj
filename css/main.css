@@ -5,6 +5,11 @@ body,html{
 	padding:0;
 	margin: 0;
 }
+body{
+    background: url('../img/Augustin067.jpg') center center no-repeat;
+    background-size: cover;
+    display: none;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -48,7 +53,7 @@ body,html{
 }
 
 #bk1{
-	background: url('../img/Augustin015.jpg') center center no-repeat;
+	background: url('../img/Augustin016.jpg') center center no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -56,7 +61,7 @@ body,html{
     min-height: 350px;
 }
 #bk2{
-	background: url('../img/Augustin016.jpg') center center no-repeat;
+	background: url('../img/Augustin015.jpg') center center no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
