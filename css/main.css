@@ -1,10 +1,9 @@
 body,html{
-	min-width: 100%;
-	min-height: 100%;
+	width: 100%;
+	height: 100%;
 	position: relative;
 	padding:0;
 	margin: 0;
-
 }
 
 /* ==========================================================================
@@ -12,54 +11,44 @@ body,html{
    ========================================================================== */
 
 /*Carusel Css*/
-#hcover{
-	position: relative;
-	width: 100%;
+
+.carousel, .carousel-inner .active, .carousel .item, .carousel-inner {
 	height: 100%;
-}
-#hcover .carousel{
-	/*width: 100%;
-	min-height: 100%;*/
-}
-.item{
-	height: 100%;
-	width: 100%;
 }
 
-#hcover img{
- 	width: 100%;
- 	min-height: 100%;
- 	min-height: 600px;
+.fill{
+     width: 100%;
+    height: 100%;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-
 }
-#hcover .carousel .item {
+.carousel .item {
     left: 0 !important;
       -webkit-transition: opacity .7s; /*adjust timing here */
          -moz-transition: opacity .7s;
            -o-transition: opacity .7s;
               transition: opacity .7s;
 }
-#hcover .carousel-control {
+.carousel-control {
     background-image: none !important; /* remove background gradients on controls */
 }
 /* Fade controls with items */
-#hcover .next.left,
-#hcover .prev.right {
+ .next.left,
+ .prev.right {
     opacity: 1;
     z-index: 1;
 }
-#hcover .active.left,
-#hcover .active.right {
+.active.left,
+.active.right {
     opacity: 0;
     z-index: 2;
 }
 
 #bk1{
-	background: url('../img/img3mid.jpg') center center no-repeat;
+	background: url('../img/Augustin015.jpg') center center no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -67,7 +56,7 @@ body,html{
     min-height: 350px;
 }
 #bk2{
-	background: url('../img/img9mid.jpg') center center no-repeat;
+	background: url('../img/Augustin016.jpg') center center no-repeat;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -131,26 +120,95 @@ footer{
 #bot{
 	overflow:hidden !important;
 }
+.titleSec h1{
+    font-size: 7vw;
+    text-align: center;
+    color: white;
+}
+.titleSec{
+    position: relative;
+    width: 100%;
+    margin-top: 27%;
+}
+.subSect{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+.subSect h3{
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+}
+.subSect h4{
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+}
 #overlay{
 	width: 100%;
 	min-height: 100%;
-	background: hsla(54, 5%, 15%, 0.5);
+	background: hsla(54, 5%, 15%, 0.3);
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 8000;
+	z-index: 1000;
 	opacity: 1;
 	transition: opacity .3s ease-in-out;
+}
+#home_overlay, .conpos{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
 }
 #pages #overlay:hover{
 	opacity: 0;
 }
+#pages .pagestitle{
+    position: relative;
+    width: 100%;
+}
+#pages .pagestitle h3{
+    text-align: center;
+    color: #9B2F63;
+    font-size: 4vw;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+#pages .btnpositions{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+.btnpositions button{
+    background-color: hsla(0, 5%, 95%, 0.25);
+    height: 50px;
+    border: 5px solid white;
+    -ms-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    -moz-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    -webkit-transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    transition: background 0.3s linear 0s, color 0.3s linear 0s;
+    color: #9B2F63;
+}
+.btnpositions button:hover{
+    background: white;
+    color: #9B2F63;
+    font-weight: bold;
 
+}
+#pages a{
+    text-decoration: none;
+}
 
-
-
-
-
+i.lft{
+    float: right;
+}
+i.rt{
+    float: left;
+}
 
 
 
