@@ -1,6 +1,9 @@
-$('.carousel').carousel({
+$(document).ready(function() {
+	$('.carousel').carousel({
   interval: 3800
-})
+	});
+});
+
 
 
 $(window).load(function(){
