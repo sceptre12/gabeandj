@@ -18,3 +18,14 @@ function ClearStorage(){
 	localStorage.clear();
 	});
 }
+
+// var i;
+// var b = i;
+// for( i = 0; i <= $('li').length; i++)
+// {
+//   b = 0 + i ;
+//  if(typeof $('li')[i].innerHTML !== "undefined"){
+//    alert('not undefined');
+//  }else{
+//   b--;
+//  }
