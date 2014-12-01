@@ -20,12 +20,13 @@ function ClearStorage(){
 }
 
 // var i;
-// var b = i;
-// for( i = 0; i <= $('li').length; i++)
+// var b = 0;
+// for( i = 0; i < $('li').length; i++)
 // {
-//   b = 0 + i ;
-//  if(typeof $('li')[i].innerHTML !== "undefined"){
-//    alert('not undefined');
+//   b++;
+//  if( $('li')[i].innerHTML != ""){
+//    localStorage.setItem("item"+b, $('li')[i].innerHTML);
 //  }else{
 //   b--;
 //  }
+// }
