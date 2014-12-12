@@ -5,11 +5,11 @@ body,html{
 	padding:0;
 	margin: 0;
 }
-#home{
+/*#home{
     background: url('../img/Augustin067.jpg') center center no-repeat;
     background-size: cover;
     display: none;
-}
+}*/
 
 /* ==========================================================================
    Author's custom styles
@@ -158,7 +158,7 @@ footer{
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	opacity: 1;
+	opacity: 0;
 	transition: opacity .3s ease-in-out;
 }
 #home_overlay, .conpos{
@@ -170,11 +170,12 @@ footer{
     z-index: 2000;
 }
 #pages #overlay:hover{
-	opacity: 0;
+	opacity: 1;
 }
 #pages .pagestitle{
-    position: relative;
+    position: absolute;
     width: 100%;
+    z-index: 5000;
 }
 #pages .pagestitle h3{
     text-align: center;
@@ -184,9 +185,10 @@ footer{
     margin: 0;
 }
 #pages .btnpositions{
-    margin-top: 20%;
-    display: flex;
-    justify-content: center;
+    top: 50%;
+    left: 43%;
+    position: absolute;
+    z-index: 5000;
 }
 .btnpositions button{
     background-color: hsla(0, 5%, 95%, 0.25);
@@ -207,12 +209,26 @@ footer{
 #pages a{
     text-decoration: none;
 }
-
 i.lft{
     float: right;
 }
 i.rt{
     float: left;
+}
+#proposal{
+    background: url('../img/img3l.jpg') center center no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+#proposal h1{
+    margin: 0;
+    font-size: 6vw;
+}
+#proposal .proppos{
+    position: absolute;
+    top: 30%;
+    left: 32%;
 }
 #abtGabe h1,#abtJanelle h1 {
     text-align: center;
@@ -228,7 +244,11 @@ i.rt{
     min-width: 100%;
     min-height: 100%;
     background: url('../img/Augustin091.jpg') center center no-repeat;
-    background-size: cover;   
+    background-size: cover;  
+}
+.row .wow{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
