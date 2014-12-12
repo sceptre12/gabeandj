@@ -214,12 +214,22 @@ i.lft{
 i.rt{
     float: left;
 }
-#abtGabe h1{
+#abtGabe h1,#abtJanelle h1 {
     text-align: center;
 }
 
-
-
+#abtJanelle .portrait{
+    min-width: 100%;
+    min-height: 100%;
+    background: url('../img/Augustin012.jpg') center center no-repeat;
+    background-size: cover;   
+}
+#abtGabe .portrait{
+    min-width: 100%;
+    min-height: 100%;
+    background: url('../img/Augustin091.jpg') center center no-repeat;
+    background-size: cover;   
+}
 
 
 
