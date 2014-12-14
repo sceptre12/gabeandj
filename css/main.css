@@ -17,6 +17,9 @@ body,html{
 	padding:0;
 	margin: 0;
 }
+body#ppr{
+    background-color: rgba(162, 149, 135, 0.22);
+}
 /*Carusel Css*/
 
 .carousel, .carousel-inner .active, .carousel .item, .carousel-inner {
@@ -244,6 +247,8 @@ i.rt{
     font-family: 'Great Vibes', cursive;
     color: #382633;
     font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 #proposal .proppos{
@@ -263,7 +268,7 @@ i.rt{
 #abtJanelle .portrait{
     min-width: 100%;
     min-height: 100%;
-    background: url('../img/Augustin012.jpg') center center no-repeat;
+    background: url('../img/Augustin011.jpg') center center no-repeat;
     background-size: cover;
 }
 #abtGabe .portrait{
@@ -272,6 +277,7 @@ i.rt{
     background: url('../img/Augustin091.jpg') center center no-repeat;
     background-size: cover;
 }
+
 #abtGabe p, #abtJanelle p {
     font-family: Chantelli_Antiqua;
     font-size: 2vw;
@@ -280,6 +286,23 @@ i.rt{
     padding-left: 0;
     padding-right: 0;
 }
-
+#ppr #titlepos h1{
+    text-align: center;
+    font-size: 12vw;
+    font-family: 'Great Vibes', cursive;
+}
+#ppr #imgblk{
+    display: flex;
+    justify-content: center;
+}
+#ppr h2 {
+    font-size: 4vw;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 50px;
+}
+#ppr p{
+    font-size: 2vw;
+    font-family: Chantelli_Antiqua;
+}
 
 
