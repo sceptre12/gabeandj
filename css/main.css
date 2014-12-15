@@ -263,7 +263,7 @@ i.rt{
     font-size: 6vw;
 }
 #abtJanelle , #abtGabe{
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 #abtJanelle .portrait{
     min-width: 100%;
