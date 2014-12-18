@@ -31,7 +31,19 @@
               </div>
               <div class="subSect">
                   <h3>Welcome to our Wedding Website</h3>
-                  <h4>February 15, 2015  <span id="countdn"> </span> more days to go!</h4>
+                  <script type="text/javascript">
+                today = new Date();
+                BigDay = new Date("February 15, 2015");
+                msPerDay = 24 * 60 * 60 * 1000 ;
+                timeLeft = (BigDay.getTime() - today.getTime());
+                e_daysLeft = timeLeft / msPerDay;
+                daysLeft = Math.floor(e_daysLeft);
+                e_hrsLeft = (e_daysLeft - daysLeft)*24;
+                hrsLeft = Math.floor(e_hrsLeft);
+                minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>");
+
+</script>
               </div>
             </div>
           </div>
@@ -153,15 +165,8 @@
           );
          wow.init();
         </script>
-        <script type="text/javascript">
-         var clock = document.getElementById("countdn")
-    , targetDate = new Date(2015, 01, 15); // Jan 1, 2050
- 
-  clock.innerHTML = countdown(targetDate).toString();
-  setInterval(function(){
-    clock.innerHTML = countdown(targetDate).toString();
-  }, 1000);
-        </script>  
+        
+     
         <script src="js/main.js"></script>
 
     </body>
