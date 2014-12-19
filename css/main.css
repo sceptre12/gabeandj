@@ -66,7 +66,9 @@ body#ppr{
     opacity: 0;
     z-index: 2;
 }
-
+#home .col-sm-6, #home .col-sm-12{
+    visibility: hidden;
+}
 #bk1{
 	background: url('../img/Augustin016.jpg') center center no-repeat;
 	-webkit-background-size: cover;
@@ -106,12 +108,12 @@ body#ppr{
 	position: relative;
 	width: 100%;
 }
-#pages div.col-sm-6{
+#home div.col-sm-6, #home div.col-sm-12{
 	padding-left: 0;
 	padding-right: 0;
 }
 .botcover{
-	background: #E69AEF;
+	background: #E3A1F4;
 	width: 100%;
 	height: 400px;
 }
@@ -194,17 +196,34 @@ footer{
     z-index: 5000;
 }
 #pages .pagestitle h3{
-    text-align: center;
-    color: #9B2F63;
+    color: #F07ADD;
     font-size: 4vw;
     background: rgba(255, 255, 255, 0.7);
     margin: 0;
 }
+#g{
+    text-align: right;
+}
+#g i{
+    margin-left: 20px;
+}
+#j i{
+    margin-right: 10px;
+}
+#j{
+    text-align: left;
+}
 #pages .btnpositions{
-    top: 50%;
-    left: 43%;
     position: absolute;
     z-index: 5000;
+}
+#pages #ga{
+    top: 50%;
+    left: 70%;
+}
+#pages #ja{    
+    top: 50%;
+    left: 15%;
 }
 #home button{
     background-color: hsla(0, 5%, 95%, 0.25);
@@ -235,8 +254,8 @@ i.rt{
 }
 .butpos{
     position: absolute;
-    top: 70%;
-    left: 45%;
+    top: 60%;
+    left: 22%;
     right: 45%;
     z-index: 5000;
 }
@@ -254,12 +273,14 @@ i.rt{
 }
 #proposal h1{
     margin: 0;
-    font-size: 7vw;
+    font-size: 10vw;
     font-family: 'Great Vibes', cursive;
-    color: #382633;
+    color: #E3A1F4;
     font-weight: bolder;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: -67%;
+    margin-top: -18%;
 
 }
 #proposal .proppos{
@@ -285,7 +306,7 @@ i.rt{
 #abtGabe .portrait{
     min-width: 100%;
     min-height: 100%;
-    background: url('../img/Augustin091.jpg') center center no-repeat;
+    background: url('../img/gabe1.jpg') center center no-repeat;
     background-size: cover;
 }
 

@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" href="css/animations.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -41,9 +41,9 @@
                 e_hrsLeft = (e_daysLeft - daysLeft)*24;
                 hrsLeft = Math.floor(e_hrsLeft);
                 minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
-document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>");
+              document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>");
 
-</script>
+          </script>
               </div>
             </div>
           </div>
@@ -78,11 +78,11 @@ document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>")
           </div>
         <div class="container-fluid" id="pages">
           <div class="row">
-            <div class="col-sm-6  wow fadeInUp" data-wow-duration="1s">
+            <div class="animatedElement col-sm-6 " >
                 <div class="pagestitle">
-                  <h3>Gabriel <i class="icon-heart lft"></i></h3>
+                  <h3 id="g">Gabriel <i class="icon-heart lft"></i></h3>
                 </div>
-                <div class="btnpositions">
+                <div class="btnpositions" id="ga">
                   <a href="gabe.html">
                     <button class="btn ">About Me</button>
                   </a>
@@ -90,11 +90,11 @@ document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>")
             <div id="overlay"></div>
               <div id="bk1"></div>
             </div>
-            <div id="bpoint" class="col-sm-6  wow fadeInUp" data-wow-duration="1s">
+            <div class="animatedElement col-sm-6 ">
                 <div class="pagestitle">
-                  <h3>Janelle <i class="icon-heart rt"></i></h3>
+                  <h3 id="j">Janelle <i class="icon-heart rt"></i></h3>
                 </div>
-                <div class="btnpositions">
+                <div class="btnpositions" id="ja">
                   <a href="janelle.html">
                     <button class="btn ">About Me</button>
                   </a>
@@ -104,12 +104,12 @@ document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>")
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12 wow fadeInUp" data-wow-duration="1s">
+            <div class="animatedElement col-sm-12 ">
               <div id="banner"></div>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12 wow fadeInUp" data-wow-duration="1s">
+            <div class="animatedElement col-sm-12 ">
               <div id="overlay"></div>
               <div id="proposal">
                 <div class="proppos">
@@ -124,18 +124,18 @@ document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>")
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6  wow fadeInUp" data-wow-duration="1s">
-            <div id="overlay"></div>
-              <div id="bk3"></div>
+            <div class="animatedElement col-sm-6 ">
+              <div id="overlay"></div>
+                <div id="bk3"></div>
             </div>
-            <div class="col-sm-6  wow fadeInUp"data-wow-duration="1s" >
-            <div id="overlay"></div>
-              <div id="bk4"></div>
+            <div class="animatedElement col-sm-6 " >
+              <div id="overlay"></div>
+                <div id="bk4"></div>
             </div>
           </div>
         </div>
         <div  id="bot">
-          <div class="container-fluid botcover wow fadeInUp" data-wow-duration="1s">
+          <div class="container-fluid botcover s">
               <div class="row">
                 <div class="col-xm-12">
                   <div></div>
@@ -153,21 +153,19 @@ document.write("<H4>" + daysLeft + " days and " + hrsLeft +" hours left!!</H4>")
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>        
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script type="text/javascript">
-        var wow = new WOW(
-            {
-              boxClass:     'wow',      // animated element css class (default is wow)
-              animateClass: 'animated', // animation css class (default is animated)
-              offset:       0,          // distance to the element when triggering the animation (default is 0)
-              mobile:       true,       // trigger animations on mobile devices (default is true)
-              live:         true        // act on asynchronously loaded content (default is true)
-            }
-          );
-         wow.init();
-        </script>
-        
-     
         <script src="js/main.js"></script>
+        <script>
+          $(window).scroll(function() {
+            $('.animatedElement').each(function(){
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+              if (imagePos < topOfWindow+400) {
+                $(this).addClass("slideUp");
+              }
+            });
+          });
+        </script>
 
     </body>
 </html>
