@@ -1,26 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+@font-face{
+    font-family: Chantelli_Antiqua;
+    src: url('../fonts/Chantelli_Antiqua.ttf');
+    src: url('../fonts/Chantelli_Antiqua.ttf'?#iefix) format('embedded-opentype'),
+    url('../fonts/Chantelli_Antiqua.ttf') format ('woff'),
+    url('../fonts/Chantelli_Antiqua.ttf') format ('truetype'),
+    url('../fonts/Chantelli_Antiqua.ttf') format ('svg'),
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: madariaga;
+    src: url('../fonts/madariaga.ttf');
+    src: url('../fonts/madariaga.ttf'?#iefix) format('embedded-opentype'),
+    url('../fonts/madariaga.ttf') format ('woff'),
+    url('../fonts/madariaga.ttf') format ('truetype'),
+    url('../fonts/madariaga.ttf') format ('svg'),
+    font-weight: normal;
+    font-style: normal;
+}
+/*@font-face {
+    font-family: edwardian;
+    src: url('../font/361.ttf');
+    src: url('../font/361.ttf?#iefix') format('embedded-opentype'),
+         url('../font/361.ttf') format('woff2'),
+         url('../font/361.ttf') format('woff'),
+         url('../font/361.ttf') format('truetype'),
+         url('../font/361.ttf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
 body,html{
-	width: 100%;
+    width: 100%;
+	min-width: 100%;
 	height: 100%;
+    min-height: 100%;
 	position: relative;
 	padding:0;
 	margin: 0;
 }
-/*#home{
-    background: url('../img/Augustin067.jpg') center center no-repeat;
-    background-size: cover;
-    display: none;
-}*/
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+body#ppr{
+    background-color: rgba(162, 149, 135, 0.22);
+}
+section{
+    width: 100%;
+    height: 100%;
+}
 /*Carusel Css*/
 
 .carousel, .carousel-inner .active, .carousel .item, .carousel-inner {
 	height: 100%;
 }
-
+.carousel-caption{
+    z-index: 9000;
+}
 .fill{
      width: 100%;
     height: 100%;
@@ -51,7 +85,9 @@ body,html{
     opacity: 0;
     z-index: 2;
 }
-
+#home .col-sm-6, #home .col-sm-12{
+    visibility: hidden;
+}
 #bk1{
 	background: url('../img/Augustin016.jpg') center center no-repeat;
 	-webkit-background-size: cover;
@@ -91,12 +127,12 @@ body,html{
 	position: relative;
 	width: 100%;
 }
-#pages div.col-sm-6{
+#home div.col-sm-6, #home div.col-sm-12{
 	padding-left: 0;
 	padding-right: 0;
 }
 .botcover{
-	background: #9B2F63;
+	background: #E3A1F4;
 	width: 100%;
 	height: 400px;
 }
@@ -128,27 +164,29 @@ footer{
 .titleSec h1{
     font-size: 7vw;
     text-align: center;
-    color: white;
+    color: #F07ADD;
+    font-family: madariaga;
+    text-shadow: 3px 3px #000000;
 }
 .titleSec{
     position: relative;
     width: 100%;
-    margin-top: 27%;
+    margin-top: 17%;
 }
 .subSect{
     position: relative;
     width: 100%;
     margin-top: 5%;
+    color: #F07ADD;
+    text-shadow: 1px 1px black;
 }
 .subSect h3{
     font-size: 4vw;
     text-align: center;
-    color: white;
 }
 .subSect h4{
     font-size: 2vw;
     text-align: center;
-    color: white;
 }
 #overlay{
 	width: 100%;
@@ -178,32 +216,51 @@ footer{
     z-index: 5000;
 }
 #pages .pagestitle h3{
-    text-align: center;
-    color: #9B2F63;
+    color: #F07ADD;
     font-size: 4vw;
     background: rgba(255, 255, 255, 0.7);
     margin: 0;
 }
+#g{
+    text-align: right;
+}
+#g i{
+    margin-left: 20px;
+}
+#j i{
+    margin-right: 10px;
+}
+#j{
+    text-align: left;
+}
 #pages .btnpositions{
-    top: 50%;
-    left: 43%;
     position: absolute;
     z-index: 5000;
 }
-.btnpositions button{
+#pages #ga{
+    top: 50%;
+    left: 70%;
+}
+#pages #ja{    
+    top: 50%;
+    left: 15%;
+}
+#home button{
     background-color: hsla(0, 5%, 95%, 0.25);
     height: 50px;
     border: 5px solid white;
-    -ms-transition: background 0.3s linear 0s, color 0.3s linear 0s;
-    -moz-transition: background 0.3s linear 0s, color 0.3s linear 0s;
-    -webkit-transition: background 0.3s linear 0s, color 0.3s linear 0s;
-    transition: background 0.3s linear 0s, color 0.3s linear 0s;
-    color: #9B2F63;
+    -ms-transition: all 0.3s linear 0s, color 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s, color 0.3s linear 0s;
+    -webkit-transition: all 0.3s linear 0s, color 0.3s linear 0s;
+    transition: all 0.3s linear 0s, color 0.3s linear 0s;
+    color: #E3A1F4;
 }
-.btnpositions button:hover{
+#home button:hover{
     background: white;
     color: #9B2F63;
     font-weight: bold;
+    height: 60px;
+    width: auto;
 
 }
 #pages a{
@@ -215,41 +272,135 @@ i.lft{
 i.rt{
     float: left;
 }
+.butpos{
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    right: 45%;
+    z-index: 5000;
+}
+#banner{
+    background: url('../img/Augustin022.jpg') center center no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
 #proposal{
-    background: url('../img/img3l.jpg') center center no-repeat;
+    background: url('../img/Augustin067.jpg') center center no-repeat;
     width: 100%;
     height: 500px;
     background-size: cover;
 }
 #proposal h1{
     margin: 0;
-    font-size: 6vw;
+    font-size: 10vw;
+    font-family: 'Great Vibes', cursive;
+    color: #E3A1F4;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -67%;
+    margin-top: -18%;
+
 }
 #proposal .proppos{
     position: absolute;
     top: 30%;
     left: 32%;
+    z-index: 5000 !important;
 }
 #abtGabe h1,#abtJanelle h1 {
     text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 6vw;
 }
-
+#abtJanelle , #abtGabe{
+    /*overflow: hidden;*/
+}
 #abtJanelle .portrait{
     min-width: 100%;
     min-height: 100%;
-    background: url('../img/Augustin012.jpg') center center no-repeat;
-    background-size: cover;   
+    background: url('../img/Augustin011.jpg') center center no-repeat;
+    background-size: cover;
 }
 #abtGabe .portrait{
     min-width: 100%;
     min-height: 100%;
-    background: url('../img/Augustin091.jpg') center center no-repeat;
-    background-size: cover;  
+    background: url('../img/gabe1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#abtGabe p, #abtJanelle p {
+    font-family: Chantelli_Antiqua;
+    font-size: 2vw;
 }
 .row .wow{
     padding-left: 0;
     padding-right: 0;
 }
-
-
-
+#ppr #titlepos h1{
+    text-align: center;
+    font-size: 12vw;
+    font-family: 'Great Vibes', cursive;
+}
+#ppr #imgblk{
+    display: flex;
+    justify-content: center;
+}
+#ppr h2 {
+    font-size: 4vw;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 50px;
+}
+#ppr p{
+    font-size: 2vw;
+    font-family: Chantelli_Antiqua;
+}
+#ceremony #tron h1{
+    text-align: center;
+}
+#ceremony img{
+    margin-left: 25%;
+}
+#ceremony h2{
+    text-align: center;
+}
+#ceremony #ct {
+    padding-left: 50%;
+}
+#ceremony address{
+   text-align: center;
+}
+#mapcnt{
+    width: 500px;
+    height: 500px;
+}
+#map_canvas{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+}
+#coverlay{
+    visibility: hidden;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background: rgba(252, 245, 112, 0.06);
+}
+@media only screen and (max-width: 768px){
+    #ceremony img, #map_canvas{
+        margin-left: 0;
+    }
+    #ceremony #ct {
+        padding-left: 0;
+    }
+    #coverlay{
+        visibility: visible;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Janelle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript">
+            function initialize() {
+              var mapOptions = {
+                zoom: 17,
+                center: new google.maps.LatLng(25.930507,-80.121328)
+              };
+              var map = new google.maps.Map(document.getElementById('map_canvas'),
+                  mapOptions);
+              var pointer = new google.maps.LatLng(25.930507,-80.121328);
+              var marker = new google.maps.Marker({
+                position: pointer,
+                map: map,
+                title:'NewPort BeachSide Hotel'
+              })
+            }
+            function loadScript() {
+              var script = document.createElement('script');
+              script.type = 'text/javascript';
+              script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+                  'callback=initialize';
+              document.body.appendChild(script);
+            }
+            window.onload = loadScript;        
+        </script>
+    </head>
+    <body id="ceremony" class="container">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="tron" class="jumbotron">
+          <h1>Ceremony &amp; Reception</h1>
+        </div>
+        <div class="row container ">
+          <div class="col-sm-6">
+            <div id="mapcnt">
+              <div id="coverlay"></div>
+              <div id="map_canvas"></div> 
+            </div>            
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-12">
+                  <img src="img/nwport.jpg" class="img-responsive" alt="NewPort">
+              </div>
+              <div class="row">
+                <div id="ct" class="col-sm-12">
+                  <h2>Ceremony Location</h2>
+                  <address>
+                    16701 Collins Avenue<br>
+                    Miami Beach, FL 33160<br>
+                    (305) 949-1300 <br>
+                    NewPort BeachSide 
+                    <a href="http://www.newportbeachsideresort.com/">Website</a> 
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+            <h2>Information for Guest</h2>
+            <p>
+Our wedding will be held at the beautiful Newport Beachside Hotel & Resort in Miami. Parking is $5 for self-parking (across the street) or $10 for valet CASH ONLY. The ceremony will be outside, but not on the sand. Please dress accordingly. Cocktail hour and the reception will immediately follow the ceremony and will be held inside. </p>
+
+            <h2>Driving Directions</h2>
+            <p> 
+              <u>Coming South via Turnpike:</u>               
+              Take I-595 E and Florida's Turnpike to FL-826 E in Miami Gardens. Follow FL-826 E to Collins Ave in Sunny Isles Beach. Turn left onto Collins Ave. Destination will be on the right.
+            </p>
+            <p>
+              <u>Coming South via I-95:</u>
+              Take exit 16 from I-95 S. Take U.S. 1 S/Biscayne Blvd and NE 163rd St to Collins Ave in Sunny Isles Beach. Turn left onto Collins Ave. Destination will be on the right.
+            </p>
+            <p>
+              <u>Coming North via Turnpike:</u>
+              Continue to Miami Gardens. Follow FL-826 E to Collins Ave in Sunny Isles Beach. Turn left onto Collins Ave. Destination will be on the right.
+            </p>
+            <p>
+              <u>Coming North via I-95:</u>
+              Continue on FL-821 N. Take FL-874 N, FL-826 N, FL-836 and I-95 Express to FL-826 E in Golden Glades. Take exit 12B from I-95 N. Follow FL-826 E to Collins Ave in Sunny Isles Beach. Turn left onto Collins Ave. Destination will be on the right.
+            </p>
+          </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>        
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
