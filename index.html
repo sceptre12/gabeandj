@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/animations.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+      
     </head>
     <body id="home">
         <!--[if lt IE 7]>
@@ -50,38 +51,49 @@
           <section>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-              <ol class="carousel-indicators">
+              <!-- <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-              </ol>
+              </ol> -->
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item  active">
                     <div class="fill" style="background-image:url('img/Augustin083.jpg');"></div>
                     <div class="carousel-caption">
-                    
+                      <button>Enter</button>
                     </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin116.jpg');"></div>
+                  <div class="carousel-caption">
+                      <button>Enter</button>
+                    </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin071.jpg');"></div>
+                  <div class="carousel-caption">
+                      <button>Enter</button>
+                    </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin063.jpg');"></div>
+                  <div class="carousel-caption">
+                      <button>Enter</button>
+                    </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin035.jpg');"></div>
+                  <div class="carousel-caption">
+                      <button>Enter</button>
+                    </div>
                 </div>
               </div>
             </div>
           </section>
-          
-        <div class="container-fluid" id="pages">
+          <div class="container-fluid" id="pages">
           <div class="row">
             <div class="animatedElement col-sm-6 " >
                 <div class="pagestitle">
@@ -151,12 +163,14 @@
 
           </footer>
         </div>
+        
 
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>        
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.preload.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>
@@ -170,6 +184,23 @@
               }
             });
           });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $.preload( 
+            "img/Augustin083.jpg",
+           "img/Augustin116.jpg",
+           "img/Augustin071.jpg",
+           "img/Augustin063.jpg",
+           "img/Augustin035.jpg",
+           "img/Augustin016.jpg",
+           "img/Augustin015.jpg",
+           "img/img10mid.jpg",
+           "img/img12mid.jpg",
+           "img/Augustin022.jpg",
+           "img/Augustin067.jpg"
+          );
+        });
         </script>
 
     </body>
