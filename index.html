@@ -120,11 +120,11 @@
               <div id="bk2"></div>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="animatedElement col-sm-12 ">
               <div id="banner"></div>
             </div>
-          </div>
+          </div> -->
           <div class="row">
             <div class="animatedElement col-sm-12 ">
               <div id="overlay"></div>
@@ -179,14 +179,14 @@
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+400) {
+              if (imagePos < topOfWindow+900) {
                 $(this).addClass("slideUp");
               }
             });
           });
         </script>
         <script type="text/javascript">
-        $(document).ready(function(){
+       $( function(){
           $.preload( 
             "img/Augustin083.jpg",
            "img/Augustin116.jpg",
