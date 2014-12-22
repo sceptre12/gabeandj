@@ -22,9 +22,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <!-- <nav>
-
-        </nav> -->
+       
           <div id="home_overlay">
             <div class="container">
               <div class="titleSec">
@@ -143,16 +141,23 @@
           <div class="row">
             <div class="animatedElement col-sm-6 ">
               <div id="overlay"></div>
+                <div class="btnpositions" id="cr">
+                  <button class="btn">Enter</button>
+                </div>
                 <div id="bk3"></div>
+                
             </div>
             <div class="animatedElement col-sm-6 " >
               <div id="overlay"></div>
+              <div class="btnpositions" id="pa">
+                  <button class="btn">Enter</button>
+                </div>
                 <div id="bk4"></div>
             </div>
           </div>
         </div>
         <div  id="bot">
-          <div class="container-fluid botcover s">
+          <div class="container-fluid botcover ">
               <div class="row">
                 <div class="col-xm-12">
                   <div></div>
@@ -179,7 +184,7 @@
             var imagePos = $(this).offset().top;
 
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+900) {
+              if (imagePos < topOfWindow+400) {
                 $(this).addClass("slideUp");
               }
             });
