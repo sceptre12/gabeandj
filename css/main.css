@@ -282,6 +282,21 @@ footer{
 #bot{
 	overflow:hidden !important;
 }
+.bottitle{
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 5000;
+    color: #F07ADD;
+}
+.bottn{
+    top: 50%;
+    left: 45%;
+    z-index: 5000;
+}
 .titleSec h1{
     font-size: 7vw;
     text-align: center;
@@ -477,8 +492,17 @@ i.rt{
     font-size: 2vw;
     font-family: Chantelli_Antiqua;
 }
+#ceremony{
+    background-color: #ECECEC;
+}
+#tron{
+    background-color: #BFBFBF;
+}
 #ceremony #tron h1{
     text-align: center;
+    font-family: madariaga;
+    font-size: 9w;
+    color: #F07ADD;
 }
 #ceremony img{
     margin-left: 25%;
