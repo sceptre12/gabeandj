@@ -1,9 +1,4 @@
 $(document).ready(function(){
-	setTimeout(function(){
-		$('body').addClass("loaded").removeClass('ld');
-
-	},3000);
-
 	$('.portrait').hover(function(){
 	  $(this).find('img').fadeTo("slow",0.01);
 	}, function(){
@@ -12,11 +7,15 @@ $(document).ready(function(){
 	$('.carousel').carousel({
   		interval: 4800
 	});
-});
-$(window).load(function(){
 	var chk = 'F5$40x9';
 	localStorage.setItem("info" , 'F5$40x9');
-});
+	// utilizes the wait for images plugin
+	$('body').waitForImages(function() {
+   		setTimeout(function(){
+   			$('body').addClass("loaded").removeClass('ld');
+   		}, 3000);
+	});
+});	
 function chek(){
 	if(!($("#guestc").val() === localStorage.getItem("info"))){
 		event.preventDefault();
