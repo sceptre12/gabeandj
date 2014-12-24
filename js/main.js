@@ -24,6 +24,8 @@ function chek(){
 		event.preventDefault();
 		$('#hd').css('opacity','1');
 		$('#hd').fadeTo(600, 0);
+	}else{
+		sessionStorage.setItem("pass", "true");
 	}
 }
 $('a[href*=#]:not([href=#])').click(function() {
