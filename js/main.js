@@ -15,10 +15,8 @@ $(document).ready(function(){
   		interval: 4800
 	});
 	var chk = 'F5$40x9';
-	localStorage.setItem("info" , 'F5$40x9');
-	// utilizes the wait for images plugin
-	
-});	
+	localStorage.setItem("info" , 'F5$40x9');	
+});
 function chek(){
 	if(!($("#guestc").val() === localStorage.getItem("info"))){
 		event.preventDefault();
@@ -28,6 +26,7 @@ function chek(){
 		sessionStorage.setItem("pass", "true");
 	}
 }
+// smooth scrolling
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
