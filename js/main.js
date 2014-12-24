@@ -1,3 +1,10 @@
+$(window).load(function(){
+	$('body').imagesLoaded( function() {
+	   setTimeout(function(){
+	   			$('body').addClass("loaded").removeClass('ld');
+	   		}, 3000);
+	});
+});
 $(document).ready(function(){
 	$('.portrait').hover(function(){
 	  $(this).find('img').fadeTo("slow",0.01);
@@ -12,11 +19,6 @@ $(document).ready(function(){
 	// utilizes the wait for images plugin
 	
 });	
-$('body').imagesLoaded( function() {
-   setTimeout(function(){
-   			$('body').addClass("loaded").removeClass('ld');
-   		}, 3000);
-});
 function chek(){
 	if(!($("#guestc").val() === localStorage.getItem("info"))){
 		event.preventDefault();
