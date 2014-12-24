@@ -2,9 +2,14 @@ body, html{
 	width: 100%;
 	height: 100%;
 }
+section{
+	width: 100%;
+	height: 100%;
+}
 #thumbList img{
-	width: 200px;
-	height: 200px;
+	z-index: 300;
+	width: 200px !important;
+	height: 200px !important;
 }
 #thumbList li{
 	white-space: nowrap;	
@@ -18,10 +23,19 @@ body, html{
 #thumbWrapper{
 	position: absolute;
 	bottom: 0;
-	width: 900px;
+	width: 100%;
 	overflow: auto;
 }
-#albumImage img{
-	max-width: 100%;
-	max-height: 100%;
+#albumImage  #brimg{
+	position: fixed;
+	top:0;
+	left: 0;
+
+	/*preserves aspect ratio*/
+	max-width: 55%;
+	max-height: 70%;
+	margin-left: 20%;
+}
+#albumImage{
+
 }

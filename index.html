@@ -66,31 +66,41 @@
                 <div class="item  active">
                     <div class="fill" style="background-image:url('img/Augustin083.jpg');"></div>
                     <div class="carousel-caption">
-                      <button>Enter</button>
+                      <a href="#pages">
+                        <button>Enter</button>
+                      </a>
                     </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin116.jpg');"></div>
                   <div class="carousel-caption">
-                      <button>Enter</button>
+                      <a href="#pages">
+                        <button>Enter</button>
+                      </a>
                     </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin071.jpg');"></div>
                   <div class="carousel-caption">
-                      <button>Enter</button>
+                      <a href="#pages">
+                        <button>Enter</button>
+                      </a>
                     </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin063.jpg');"></div>
                   <div class="carousel-caption">
-                      <button>Enter</button>
+                      <a href="#pages">
+                        <button>Enter</button>
+                      </a>
                     </div>
                 </div>
                 <div class="item ">
                   <div class="fill" style="background-image:url('img/Augustin035.jpg');"></div>
                   <div class="carousel-caption">
-                      <button>Enter</button>
+                      <a href="#pages">
+                        <button>Enter</button>
+                      </a>
                     </div>
                 </div>
               </div>
@@ -170,19 +180,56 @@
                 <div id="bk4"></div>
             </div>
           </div>
-        </div>
-        <div  id="bot">
-          <div class="container-fluid botcover ">
-              <div class="row">
-                <div class="col-xm-12">
-                  <div></div>
+        </div>        
+      <footer class="animatedElement container-fluid">
+            <div class="row">
+              <div class="col-sm-12" id="fhead">
+                <h1>GuestBook SignUp</h1>
               </div>
             </div>
-          </div>
-          <footer>
+            <div class="row">
+              <div class="col-sm-6">
+                <h3>Enter Special Guest Code</h3>
+                <div id="hd">
+                  <h5>Incorrect Password!!</h5>
+                </div>
+                <div>                   
+                  <input type="text" id="guestc" placeholder="Enter Code">
+                </div>                
+                <div id="spg">
+                  <a href="specialguest.html">
+                    <button onclick="chek()">Submit</button>
+                  </a>                  
+                </div>                
+                               
+              </div>
+              <div class="col-sm-6">
+                <h3>Guest Sign Up Form</h3>
 
-          </footer>
-        </div>
+                <div>
+                  <a href="guestsignup.html">
+                    <button>Enter</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12" id="lstcall">
+                <script type="text/javascript">
+                today = new Date();
+                BigDay = new Date("February 15, 2015");
+                msPerDay = 24 * 60 * 60 * 1000 ;
+                timeLeft = (BigDay.getTime() - today.getTime());
+                e_daysLeft = timeLeft / msPerDay;
+                daysLeft = Math.floor(e_daysLeft);
+                e_hrsLeft = (e_daysLeft - daysLeft)*24;
+                hrsLeft = Math.floor(e_hrsLeft);
+                minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+              document.write("<H4>" + daysLeft + " Days " + hrsLeft +" Hours and " + minsLeft + " Minutes left.</H4>");
+          </script>
+              </div>
+            </div>
+      </footer>
         
 
 
@@ -197,7 +244,6 @@
           $(window).scroll(function() {
             $('.animatedElement').each(function(){
             var imagePos = $(this).offset().top;
-
             var topOfWindow = $(window).scrollTop();
               if (imagePos < topOfWindow+400) {
                 $(this).addClass("slideUp");
@@ -206,21 +252,21 @@
           });
         </script>
         <script type="text/javascript">
-       $( function(){
-          $.preload( 
-            "img/Augustin083.jpg",
-           "img/Augustin116.jpg",
-           "img/Augustin071.jpg",
-           "img/Augustin063.jpg",
-           "img/Augustin035.jpg",
-           "img/Augustin016.jpg",
-           "img/Augustin015.jpg",
-           "img/img10mid.jpg",
-           "img/img12mid.jpg",
-           "img/Augustin022.jpg",
-           "img/Augustin067.jpg"
-          );
-        });
+       // $( function(){
+       //    $.preload( 
+       //      "img/Augustin083.jpg",
+       //     "img/Augustin116.jpg",
+       //     "img/Augustin071.jpg",
+       //     "img/Augustin063.jpg",
+       //     "img/Augustin035.jpg",
+       //     "img/Augustin016.jpg",
+       //     "img/Augustin015.jpg",
+       //     "img/img10mid.jpg",
+       //     "img/img12mid.jpg",
+       //     "img/Augustin022.jpg",
+       //     "img/Augustin067.jpg"
+       //    );
+       //  });
         </script>
 
     </body>

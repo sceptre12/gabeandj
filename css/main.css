@@ -39,6 +39,7 @@ body,html{
 	position: relative;
 	padding:0;
 	margin: 0;
+    background-color: #eff2f3;
 }
 .ld{
     overflow: hidden;
@@ -206,9 +207,10 @@ section{
     opacity: 0;
     z-index: 2;
 }
-#home .col-sm-6, #home .col-sm-12{
+/*#home .col-sm-6, #home .col-sm-12{
     visibility: hidden;
-}
+}*/
+
 #bk1{
 	background: url('../img/Augustin016.jpg') center center no-repeat;
 	-webkit-background-size: cover;
@@ -248,7 +250,10 @@ section{
 	position: relative;
 	width: 100%;
 }
-#home div.col-sm-6, #home div.col-sm-12{
+.animatedElement{
+    visibility: hidden;
+}
+#home div.col-sm-6, #home div.col-sm-12, footer.animiatedElement div.col-sm-12, footer.animiatedElement div.col-sm-7{
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -257,10 +262,72 @@ section{
 	width: 100%;
 	height: 400px;
 }
+#lstcall{
+    text-align: center;
+    font-size: 5vw;
+}
+footer #fhead{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+#lstcall h4{
+    background-color: rgba(0, 0, 0, 0.37);
+    color: rgba(245, 222, 179, 1);
+    font-size: 3vw;
+    margin-top: -50px;
+}
+#hd{
+    opacity: 0;
+    color: red;
+    margin-bottom: 0;
+}
 footer{
-	background: #000000;
-	width: 100%;
-	height: 120px;
+    background: url('../img/Augustin114.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	height: 100%;
+    width: 100%;
+    visibility: hidden;
+    position: relative;
+}
+footer input{
+    border-radius: 10px;
+    padding-left: 5px;
+}
+footer h1{
+    text-align: center;
+    font-size: 5vw;
+    color: rgba(245, 222, 179, 1);
+    font-family: 'Great Vibes', cursive;
+}
+footer h3{
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2vw;
+    font-family: Chantelli_Antiqua;
+}
+footer .col-sm-6 div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+button{
+    border-radius: 50px !important;
+}
+#sgsingup input{
+    margin-bottom: 30px;
+}
+#sgsingup button{
+    /*background-color: #2ecc71;*/
+}
+#sgsingup textarea{
+    width: 100%;
+    min-height: 200px;
+}
+#sgsingup #sub{
+    display: flex;
+    justify-content: center;
 }
 #pages #bk1, #bk2,#bk3,#bk4{
 	-webkit-animation-fill-mode: both;

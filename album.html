@@ -11,11 +11,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+        <script>window.angular || document.write('<script src="js/angular.min.js"><\/script>')</script>
         <script src="http://documentcloud.github.io/underscore/underscore-min.js"></script>
         <script type="text/javascript" src="js/album.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/album.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>        
     </head>
@@ -23,19 +22,20 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div ng-controller="AlbumCtrl">
-
-            <div id="albumImage">
-                <img ng-src="{{currentImage.image}}" alt="{{currentImage.description}}">
+        <section>
+            <div ng-controller="AlbumCtrl">
+                <div id="albumImage">
+                    <img id="brimg" class="img-thumbnail" ng-src="{{currentImage.image}}" alt="{{currentImage.description}}">
+                    <div id="thumbWrapper">
+                        <ul id="thumbList">
+                            <li ng-repeat="image in images"  ng-click="setCurrentImage(image)">
+                                <img ng-src="{{image.thumbnail}}" class="img-circle" alt="{{image.description}">
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
             </div>
-            <div id="thumbWrapper">
-                <ul id="thumbList">
-                    <li ng-repeat="image in images" ng-click="setCurrentImage(image)">
-                        <img ng-src="{{image.thumbnail}}" alt="{{image.description}">
-                    </li>
-                </ul>
-            </div>    
-        </div>
+        </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>        
