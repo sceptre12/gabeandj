@@ -235,6 +235,11 @@ section{
 #pages {
 	overflow:hidden !important;
 }
+.galign{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 #pages{
 	position: relative;
 	width: 100%;
@@ -262,7 +267,6 @@ footer #fhead{
     background-color: rgba(0, 0, 0, 0.37);
     color: rgba(245, 222, 179, 1);
     font-size: 3vw;
-    margin-top: -50px;
 }
 #hd{
     opacity: 0;
@@ -292,7 +296,6 @@ footer h1{
 }
 footer h3{
     text-align: center;
-    margin-bottom: 5%;
     font-size: 2vw;
     font-family: Chantelli_Antiqua;
 }
