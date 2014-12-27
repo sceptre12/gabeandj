@@ -277,7 +277,7 @@ footer{
     -o-background-size: cover;
 	height: 100%;
     width: 100%;
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: relative;
 }
 footer input{
@@ -366,8 +366,8 @@ button{
     font-size: 7vw;
     text-align: center;
     color: #F07ADD;
-    /*font-family: madariaga;*/
-    font-family: 'Great Vibes', cursive;
+    font-family: madariaga;
+    /*font-family: 'Great Vibes', cursive;*/
     text-shadow: 3px 3px #000000;
 }
 .titleSec{

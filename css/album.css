@@ -30,8 +30,6 @@ section{
 	position: fixed;
 	top:0;
 	left: 0;
-
-	/*preserves aspect ratio*/
 	max-width: 55%;
 	max-height: 70%;
 }
