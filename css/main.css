@@ -312,11 +312,16 @@ button{
 }
 #sgsingup textarea{
     width: 100%;
-    min-height: 200px;
+    min-height: 100px;
 }
 #sgsingup #sub{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+#gi .guest label:nth-child(3){
+    margin-left: 10px;
 }
 #pages #bk1, #bk2,#bk3,#bk4{
 	-webkit-animation-fill-mode: both;

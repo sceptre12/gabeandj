@@ -14,17 +14,28 @@ $(document).ready(function(){
 	$('.carousel').carousel({
   		interval: 4800
 	});
-	var chk = 'F5$40x9';
-	localStorage.setItem("info" , 'F5$40x9');	
+	sessionStorage.clear();
+	var chk = ["1Dp8g","2&LJ98","3M8p$t","4wjR7k","5eF9@w"];
+	sessionStorage.setItem("info" , JSON.stringify(chk));	
 });
 function chek(){
-	if(!($("#guestc").val() === localStorage.getItem("info"))){
+	var inform = JSON.parse(sessionStorage.getItem("info"));
+	var found = false;
+	for(var a = 0; a < inform.length; a++){
+		if($("#guestc").val() === inform[a]){
+			found = true;
+			sessionStorage.clear();
+			sessionStorage.setItem("item", inform[a]);
+		}
+	}
+	if( !(found === true)){
 		event.preventDefault();
 		$('#hd').css('opacity','1');
 		$('#hd').fadeTo(600, 0);
-	}else{
-		sessionStorage.setItem("pass", "true");
 	}
+	else{	
+			sessionStorage.setItem("pass", "true");			
+		}	
 }
 // smooth scrolling
 $('a[href*=#]:not([href=#])').click(function() {
