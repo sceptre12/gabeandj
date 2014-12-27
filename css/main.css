@@ -351,6 +351,10 @@ button{
     justify-content: center;
     background: rgba(255, 255, 255, 0.7);
     z-index: 5000;
+    
+}
+.bottitle h1{
+    font-family: 'Great Vibes', cursive;
     color: #F07ADD;
 }
 .bottn{
@@ -362,7 +366,8 @@ button{
     font-size: 7vw;
     text-align: center;
     color: #F07ADD;
-    font-family: madariaga;
+    /*font-family: madariaga;*/
+    font-family: 'Great Vibes', cursive;
     text-shadow: 3px 3px #000000;
 }
 .titleSec{
@@ -380,6 +385,7 @@ button{
 .subSect h3{
     font-size: 4vw;
     text-align: center;
+    font-family: 'Great Vibes', cursive;
 }
 .subSect h4{
     font-size: 2vw;
@@ -410,13 +416,13 @@ button{
 #pages .pagestitle{
     position: absolute;
     width: 100%;
-    z-index: 5000;
+    z-index: 5000;    
+    background: rgba(255, 255, 255, 0.7);
 }
 #pages .pagestitle h3{
     color: #F07ADD;
     font-size: 4vw;
-    background: rgba(255, 255, 255, 0.7);
-    margin: 0;
+    font-family: 'Great Vibes', cursive;
 }
 #g{
     text-align: right;
@@ -561,7 +567,8 @@ i.rt{
 }
 #ceremony #tron h1{
     text-align: center;
-    font-family: madariaga;
+    /*font-family: madariaga;*/
+    font-family: 'Great Vibes', cursive;
     font-size: 9w;
     color: #F07ADD;
 }

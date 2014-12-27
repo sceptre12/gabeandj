@@ -24,41 +24,45 @@
          <h1>Registration</h1>
        </div>
        <form action="">
-         <div class="form-group">
-          <div class="col-sm-6">
-            <label for="fname">FirstName</label>
-           <input type="text" id="fname" class="form-control" placeholder="First Name">
-          </div>
-          <div class="col-sm-6">
-            <label for="lname">LastName</label>
-           <input type="text" id="lname" class="form-control" placeholder="Last Name">
-          </div>           
-         </div>
-         <div class="form-group">
-          <div class="col-sm-6">
-            <label for="email">Email</label>
-           <input type="email" id="email" class="form-control" placeholder="Email">
-          </div>
-          <div class="col-sm-6">
-            <label for="pnum">PhoneNumber</label>
-           <input type="text" id="pnum" class="form-control" placeholder="Phone Number">
-          </div>           
-         </div>
-         <div class="form-group">
-           <div class=" col-sm-6 ">
-              <label>Message for the Bride and Groom</label>
-             <textarea name="message" id="message" ></textarea>
-           </div>
-           <div class="col-sm-6">
-                <h4>Due to limited seating you can only bring one guest to come with you.</h4>
-                <label for="guest">Will you be bringing a Guest?</label>
-                <select id="guest" class="forom-control" name="guest">
-                  <option value="1">yes</option>
-                  <option value="2">yes</option>
-                  
+         <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">          
+                <label for="fname">FirstName</label>
+               <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                  <label for="lname">LastName</label>
+                 <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name">
+              </div>
+              <div class="form-group">          
+                  <label for="email">Email</label>
+                 <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="meal">
+                <h4>Course Selection</h4>
+              </div>            
+              <div class="form-group">
+                <label for="ft">Meal choice</label>
+                <select name="food" id="ft" class="form-control">
+                  <option value="ck">Chicken</option>
+                  <option value="fh">Fish</option>
+                  <option value="vg">Vegitaran</option>
                 </select>
-             </div>
-         </div>
+                <label for="allergies">Do you have any Food Allergies</label>
+                <input type="text" name="allergies" class="form-control" id="allergies" placeholder="Allergies">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="col-sm-offset-3  col-sm-6">
+                <label>Message for the Bride and Groom</label>
+                  <textarea name="message" id="message" name="message"></textarea>
+              </div>
+             </div>   
+          </div> 
          <div class="form-group">
            <div class="col-sm-12" id="sub">
              <button type="submit" name="nguest" class="btn btn-info btn-lg ">Submit</button>

@@ -19,7 +19,7 @@
             console[method] = noop;
         }
     }
-}());
+})();
 
 /*!
  * imagesLoaded PACKAGED v3.1.8
