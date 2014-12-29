@@ -15,8 +15,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript">
           if(sessionStorage.getItem("pass") === null){window.location.replace("404.html");}
-          else if (localStorage.getItem("used") === "true"){window.location.replace("accessdenied.html");}
-          localStorage.setItem("used","true");
+          else if (localStorage.getItem("used") === sessionStorage.getItem("item")){window.location.replace("accessdenied.html");}
+          localStorage.setItem("used",sessionStorage.getItem("item"));
         </script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
