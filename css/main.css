@@ -272,6 +272,7 @@ footer #fhead{
     opacity: 0;
     color: red;
     margin-bottom: 0;
+    text-align: center;
 }
 footer{
     background: url('../img/Augustin114.jpg');
@@ -298,6 +299,7 @@ footer h3{
     text-align: center;
     font-size: 2vw;
     font-family: Chantelli_Antiqua;
+    color: rgba(245, 222, 179, 1);
 }
 footer .col-sm-6 div{
     display: flex;
@@ -306,6 +308,12 @@ footer .col-sm-6 div{
 }
 button{
     border-radius: 50px !important;
+}
+footer button{
+    color: rgba(245, 222, 179, 1) !important;
+}
+footer button:hover{
+    color: rgba(245, 222, 179, 1) !important;
 }
 #sgsingup input{
     margin-bottom: 30px;
