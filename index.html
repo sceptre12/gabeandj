@@ -196,7 +196,7 @@
                   <input type="text" id="guestc" placeholder="Enter Code">
                 </div>                
                 <div class="galign">
-                  <a href="specialguest.html">
+                  <a href="specialguest.php">
                     <button onclick="chek()">Submit</button>
                   </a>                  
                 </div>         
@@ -205,16 +205,7 @@
             <div class="row">
               <div class="col-sm-12" id="lstcall">
                 <script type="text/javascript">
-                today = new Date();
-                BigDay = new Date("February 15, 2015");
-                msPerDay = 24 * 60 * 60 * 1000 ;
-                timeLeft = (BigDay.getTime() - today.getTime());
-                e_daysLeft = timeLeft / msPerDay;
-                daysLeft = Math.floor(e_daysLeft);
-                e_hrsLeft = (e_daysLeft - daysLeft)*24;
-                hrsLeft = Math.floor(e_hrsLeft);
-                minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
-              document.write("<H4>" + daysLeft + " Days " + hrsLeft +" Hours and " + minsLeft + " Minutes left.</H4>");
+                today=new Date;BigDay=new Date("February 15, 2015");msPerDay=24*60*60*1e3;timeLeft=BigDay.getTime()-today.getTime();e_daysLeft=timeLeft/msPerDay;daysLeft=Math.floor(e_daysLeft);e_hrsLeft=(e_daysLeft-daysLeft)*24;hrsLeft=Math.floor(e_hrsLeft);minsLeft=Math.floor((e_hrsLeft-hrsLeft)*60);document.write("<H4>"+daysLeft+" Days "+hrsLeft+" Hours and "+minsLeft+" Minutes left.</H4>")
           </script>
               </div>
             </div>
