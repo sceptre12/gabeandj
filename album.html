@@ -16,6 +16,8 @@
         <script type="text/javascript" src="js/album.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/album.css">
+        <link rel="stylesheet" type="text/css" href="css/animations.min.css">
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>        
     </head>
     <body id="album" class="ld" >
@@ -28,18 +30,38 @@
           <div class="loader-section section-right"></div>
         </div>
         <section>
+            <div class="jumbotron" id="pgtitle">
+                <h1>Our Wedding Registry</h1>
+            </div>
             <div ng-controller="AlbumCtrl">
                 <div id="albumImage">
-                    <div id="sectarea">
+                   <!--  This allows for there to be a giant center image -->
+                    <!-- <div id="sectarea">
                         <img id="brimg" class="img-thumbnail" ng-src="{{currentImage.image}}" alt="{{currentImage.description}}">
-                    </div>                    
-                    <div id="thumbWrapper">
-                        <ul id="thumbList">
-                            <li ng-repeat="image in images"  ng-click="setCurrentImage(image)">
-                                <img ng-src="{{image.thumbnail}}" class="img-circle" alt="{{image.description}">
+                    </div> --> 
+                    <h2>Target Items</h2>                   
+                    <div id="targ" class="thumbWrapper">
+                        <ul class="thumbList">
+                            <li ng-repeat="image in targets">
+                                
+                                <img ng-src="{{image.thumbnail}}" class="img-thumbnail" alt="{{image.description}}">
+                                <div>
+                                    <h3>{{image.description}}</h3>
+                                </div> 
                             </li>
                         </ul>
-                    </div> 
+                    </div>
+                    <h2>Khols Items</h2>
+                    <div id="khol" class="thumbWrapper">
+                        <ul class="thumbList">
+                            <li ng-repeat="image in khols" >
+                                <img ng-src="{{image.thumbnail}}" class="img-thumbnail" alt="{{image.description}}">
+                                <div>
+                                    <h3>{{image.description}}</h3>
+                                </div>   
+                            </li>
+                        </ul>
+                    </div>  
                 </div>
             </div>
         </section>

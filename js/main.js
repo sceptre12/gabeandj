@@ -16,7 +16,24 @@ $(document).ready(function(){
 	});
 	sessionStorage.clear();
 	var chk = ["1Dp8g","2&LJ98","3M8p$t","4wjR7k","5eF9@w"];
-	sessionStorage.setItem("info" , JSON.stringify(chk));	
+	sessionStorage.setItem("info" , JSON.stringify(chk));
+	if($('#album').length){
+		$('li').find('div').each(function(){
+			if($('#targ').length){
+				$('#targ').find('div').wrap('<a></a>');
+				$('#targ').find('a').attr('href','https://www-secure.target.com/gift-registry/giftgiver?registryId=xPJo25ZAlP0_KWjqm6IRjw&clkid=UVHTMsyEpyR1yVAVgC0sNUDyUkV2Jvzfz1%3A%3A200&lnm=Online+Tracking+Link&afid=The+Knot%2C+Inc.+and+Subsidiaries&ref=tgt_adv_xasd0002');
+			}
+			if ($('#khol').length){
+				$('#khol').find('div').wrap('<a></a>');
+				$('#khol').find('a').attr('href','http://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=2816466&src=4UDRE6bZt0Q&utm_campaign=328293&utm_medium=affiliate&utm_source=4UDRE6bZt0Q&utm_content=1&utm_term=10&siteID=4UDRE6bZt0Q-a3h77zy6TupDbyvVq66koQ');
+			}
+			$(this).hover(function(){
+				$(this).find('h3').fadeIn('fast').addClass('floating');
+			}, function(){
+				$(this).find('h3').removeClass('floating').fadeOut('fast');
+			});
+		});
+	}	
 });
 function chek(){
 	var inform = JSON.parse(sessionStorage.getItem("info"));

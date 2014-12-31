@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 body, html{
 	width: 100%;
 	height: 100%;
@@ -6,25 +7,52 @@ section{
 	width: 100%;
 	height: 100%;
 }
-#thumbList img{
+.thumbList{
+  margin-left: 7%;
+}
+.thumbList img{
 	z-index: 300;
 	width: 200px !important;
 	height: 200px !important;
 }
-#thumbList li{
-	white-space: nowrap;	
+.thumbList li{
+	position: relative;
 	display: inline;
 	list-style: none;
-	opacity: 0.8;
 }
-#thumbList li:hover{
-	opacity: 1;
+.thumbList h3{
+  position: absolute;
+  top: 0;
+  left:0;
+  padding: 10px;
+  color:rgba(245, 222, 179, 1);
+  display: none;
 }
-#thumbWrapper{
-	position: absolute;
+#pgtitle h1{
+  text-align: center;
+  font-size: 7vw;
+  font-family: 'Great Vibes', cursive;
+}
+.thumbList div{
+  position: absolute;
+  top: -91px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: hsla(4, 5%, 15%, 0);
+ -webkit-transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+
+}
+.thumbList div:hover{
+  background-color: hsla(4, 5%, 15%, 0.7);
+}
+.thumbWrapper{
+	position: relative;
 	bottom: 0;
 	width: 100%;
 	overflow: auto;
+  padding: 50px;
 }
 #albumImage  #brimg{
 	position: fixed;
@@ -33,7 +61,10 @@ section{
 	max-width: 55%;
 	max-height: 70%;
 }
-
+#albumImage h2{
+  padding-left: 80px;
+  margin-left: 7%;
+}
 .ld{
     overflow: hidden;
 }
