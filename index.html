@@ -231,14 +231,14 @@
             var imagePos = $(this).offset().top;
             var topOfWindow = $(window).scrollTop();
               if($(window).width() > 1200){
-                    topOfWindow+= 550;
+                    topOfWindow+= 650;
                 }                
               $(window).resize(function(){
                 if($(window).width() > 1200){
-                  topOfWindow+= 550;
+                  topOfWindow+= 650;
                 }
               });
-              if (imagePos < topOfWindow+550) {
+              if (imagePos < topOfWindow+350) {
                 $(this).addClass("slideUp");
               }
             });
