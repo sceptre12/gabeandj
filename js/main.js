@@ -23,9 +23,9 @@ $(document).ready(function(){
 				$('#targ').find('div').wrap('<a></a>');
 				$('#targ').find('a').attr('href','https://www-secure.target.com/gift-registry/giftgiver?registryId=xPJo25ZAlP0_KWjqm6IRjw&clkid=UVHTMsyEpyR1yVAVgC0sNUDyUkV2Jvzfz1%3A%3A200&lnm=Online+Tracking+Link&afid=The+Knot%2C+Inc.+and+Subsidiaries&ref=tgt_adv_xasd0002');
 			}
-			if ($('#khol').length){
-				$('#khol').find('div').wrap('<a></a>');
-				$('#khol').find('a').attr('href','http://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=2816466&src=4UDRE6bZt0Q&utm_campaign=328293&utm_medium=affiliate&utm_source=4UDRE6bZt0Q&utm_content=1&utm_term=10&siteID=4UDRE6bZt0Q-a3h77zy6TupDbyvVq66koQ');
+			if ($('#wally').length){
+				$('#wally').find('div').wrap('<a></a>');
+				$('#wally').find('a').attr('href','https://www.walmart.com/lists/view-wedding-registry-items?id=47f55f0c-87d3-46f6-b90e-439127f489a5');
 			}
 			$(this).hover(function(){
 				$(this).find('h3').fadeIn('fast').addClass('floating');
