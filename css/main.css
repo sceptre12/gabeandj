@@ -151,9 +151,7 @@ body,html{
           transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
  }
 
-body#ppr{
-    background-color: rgba(162, 149, 135, 0.22);
-}
+
 section{
     width: 100%;
     height: 100%;
@@ -552,21 +550,48 @@ i.rt{
     padding-left: 0;
     padding-right: 0;
 }
-#ppr #titlepos h1{
+#home #hwmet{
+    background: url('../img/Augustin080.jpg') center center no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+#hwmet h1{
+    margin: 0;
+    font-size: 10vw;
+    font-family: 'Great Vibes', cursive;
+    color: #E3A1F4;
+    font-weight: bolder;
     text-align: center;
-    font-size: 12vw;
+    padding-top: 100px;
+}
+a:focus, a:hover,a:active,button:focus, button:active,button:hover{
+    text-decoration: none !important;
+    outline: none !important;
+}
+#hwmet .bpos{
+    position: absolute;
+    z-index: 5000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#phwmet #titlepos h1{
+    text-align: center;
+    font-size: 10vw;
     font-family: 'Great Vibes', cursive;
 }
-#ppr #imgblk{
+#phwmet #imgblk{
     display: flex;
     justify-content: center;
 }
-#ppr h2 {
+#phwmet h2 {
     font-size: 4vw;
     font-family: 'Great Vibes', cursive;
     margin-top: 50px;
 }
-#ppr p{
+#phwmet p{
     font-size: 2vw;
     font-family: Chantelli_Antiqua;
 }
