@@ -228,7 +228,7 @@
         <script>
           $(window).scroll(function() {
             $('.animatedElement').each(function(){
-            var imagePos = $(this).offset().top;
+            var imagePos = $(this).position().top;
             var topOfWindow = $(window).scrollTop();
               if($(window).width() > 1200){
                     topOfWindow+= 650;
