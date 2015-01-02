@@ -10,10 +10,20 @@ $(document).ready(function(){
 	  $(this).find('img').fadeTo("slow",0.01);
 	}, function(){
 	  $(this).find('img').fadeTo("slow",1);
-	});	
-	$('.carousel').carousel({
-  		interval: 4800
 	});
+	if($('#home').length){
+		$('.carousel').carousel({
+	  		interval: 4800
+		});
+		if($(window).width() < 500){
+				$('.animatedElement').css('visibility','visible').removeClass('animatedElement');
+			}
+		$(window).resize(function(){
+			if($(window).width() < 500){
+				$('.animatedElement').css('visibility','visible').removeClass('animatedElement');
+			}
+		});
+	}	
 	sessionStorage.clear();
 	var chk = ["1Dp8g","2&LJ98","3M8p$t","4wjR7k","5eF9@w"];
 	sessionStorage.setItem("info" , JSON.stringify(chk));

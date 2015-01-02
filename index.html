@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/animations.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" async></script>
-      
+        
     </head>
     <body id="home" class="ld">
         <!--[if lt IE 7]>
@@ -190,7 +190,7 @@
             </div>
           </div>
         </div>        
-      <footer class="container-fluid">
+      <footer class="container-fluid animatedElement">
             <div class="row">
               <div class="col-sm-12" id="fhead">
                 <h1>Guest Rsvp</h1>
@@ -230,7 +230,15 @@
             $('.animatedElement').each(function(){
             var imagePos = $(this).offset().top;
             var topOfWindow = $(window).scrollTop();
-              if (imagePos < topOfWindow+400) {
+              if($(window).width() > 1200){
+                    topOfWindow+= 450;
+                }                
+              $(window).resize(function(){
+                if($(window).width() > 1200){
+                  topOfWindow+= 450;
+                }
+              });
+              if (imagePos < topOfWindow+650) {
                 $(this).addClass("slideUp");
               }
             });
