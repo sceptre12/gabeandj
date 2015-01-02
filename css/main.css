@@ -653,3 +653,57 @@ a:focus, a:hover,a:active,button:focus, button:active,button:hover{
         visibility: visible;
     }
 }
+@media only screen and (max-width: 400px){
+    .subSect{
+        margin-top: 95%;
+    }
+    .subSect h3{
+        font-size: 7vw;
+    }
+    #pages .pagestitle h3{
+        font-size: 9vw;
+    }
+    #hwmet h1{
+        font-size: 14vw;
+    }
+    footer h1{
+        font-size: 10vw;
+    }
+    footer h3{
+        font-size: 5vw;
+    }
+    #lstcall h4{
+        font-size: 5vw;
+    }
+    #proposal h1{
+        margin-left: -57%;
+        font-size: 11vw;
+    }
+    .butpos{
+        left: 15%;
+    }
+    .bottn{
+        left: 37%;
+    }
+    #ceremony{
+        overflow-x: hidden;
+    }
+    #phwmet #titlepos h1{
+        font-size: 13vw;
+    }
+    #phwmet #imgblk{
+        height: 200px;
+    }
+    #phwmet p{
+        font-size: 4vw;
+    }
+    #phwmet h2{
+        font-size: 7vw;
+    }
+    #abtGabe p, #abtJanelle p{
+        font-size: 4vw;
+    }
+    #abtGabe h1, #abtJanelle h1{
+        font-size: 10vw;
+    }
+}
