@@ -186,3 +186,15 @@ section{
     -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
           transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
  }
+@media only screen and (max-width: 500px){
+  .thumbWrapper{
+    padding:0;
+  }
+  #albumImage h2{
+    margin-left: 0;
+    padding-left: 65px;
+  }
+  #pgtitle h1{
+    font-size: 13vw;
+  }
+}
