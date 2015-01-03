@@ -44,6 +44,7 @@ section{
           transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 
 }
+
 .thumbList div:hover{
   background-color: hsla(4, 5%, 15%, 0.7);
 }
@@ -86,7 +87,7 @@ section{
     height: 150px;
     margin: -75px 0 0 -75px;
     border:3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #2B46A5;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -100,7 +101,7 @@ section{
    right: 5px;
    bottom: 5px;
    border:3px solid transparent; 
-   border-top-color: #e74c3c;
+   border-top-color: #D861F7;
    border-radius: 50%;
    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -113,7 +114,7 @@ section{
    right: 15px;
    bottom: 15px;
    border:3px solid transparent; 
-   border-top-color: #f9c922;
+   border-top-color: #B82194;
    border-radius: 50%;
    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */

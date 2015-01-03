@@ -29,20 +29,30 @@ $(document).ready(function(){
 	sessionStorage.setItem("info" , JSON.stringify(chk));
 	if($('#album').length){
 		$('li').find('div').each(function(){
-			if($('#targ').length){
-				$('#targ').find('div').wrap('<a></a>');
-				$('#targ').find('a').attr('href','https://www-secure.target.com/gift-registry/giftgiver?registryId=xPJo25ZAlP0_KWjqm6IRjw&clkid=UVHTMsyEpyR1yVAVgC0sNUDyUkV2Jvzfz1%3A%3A200&lnm=Online+Tracking+Link&afid=The+Knot%2C+Inc.+and+Subsidiaries&ref=tgt_adv_xasd0002');
-			}
-			if ($('#wally').length){
-				$('#wally').find('div').wrap('<a></a>');
-				$('#wally').find('a').attr('href','https://www.walmart.com/lists/view-wedding-registry-items?id=47f55f0c-87d3-46f6-b90e-439127f489a5');
-			}
-			$(this).hover(function(){
-				$(this).find('h3').fadeIn('fast').addClass('floating');
-			}, function(){
-				$(this).find('h3').removeClass('floating').fadeOut('fast');
-			});
+			$(this).wrap('<a></a>');			
 		});
+		$('#targ').find('a').attr('href','https://www-secure.target.com/gift-registry/giftgiver?registryId=xPJo25ZAlP0_KWjqm6IRjw&clkid=UVHTMsyEpyR1yVAVgC0sNUDyUkV2Jvzfz1%3A%3A200&lnm=Online+Tracking+Link&afid=The+Knot%2C+Inc.+and+Subsidiaries&ref=tgt_adv_xasd0002');
+		$('#wally').find('a').attr('href','https://www-secure.target.com/gift-registry/giftgiver?registryId=xPJo25ZAlP0_KWjqm6IRjw&clkid=UVHTMsyEpyR1yVAVgC0sNUDyUkV2Jvzfz1%3A%3A200&lnm=Online+Tracking+Link&afid=The+Knot%2C+Inc.+and+Subsidiaries&ref=tgt_adv_xasd0002');
+		
+		if($(window).width() > 500){						
+				$('li div').hover(function(){
+					$(this).addClass('thumbhov').find('h3').fadeIn('fast').addClass('floating');
+				}, function(){
+					$(this).removeClass('thumbhov').find('h3').removeClass('floating').fadeOut('fast');
+				});
+			}
+		if($(window).width() < 500){
+			$('li').find('div').each(function(){
+				$(this).css('background-color','hsla(4, 5%, 15%, 0.7)').find('h3').fadeIn('fast').addClass('floating');
+			});
+		}
+		// $(window).resize(function(){
+		// 	if($(window).width() < 500){
+		// 		$('li').find('div').each(function(){
+		// 			$(this).css('background-color','hsla(4, 5%, 15%, 0.7)').find('h3').fadeIn('fast').addClass('floating');
+		// 		});
+		// 	}
+		// });		
 	}	
 });
 function chek(){
