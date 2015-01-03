@@ -688,6 +688,10 @@ a:focus, a:hover,a:active,button:focus, button:active,button:hover{
     #ceremony{
         overflow-x: hidden;
     }
+    #ceremony #imp{
+        font-size: 45px;
+        color: red;
+    }
     #phwmet #titlepos h1{
         font-size: 13vw;
     }
