@@ -2,7 +2,7 @@ $(window).load(function(){
 	$('body').imagesLoaded( function() {
 	   setTimeout(function(){
 	   			$('body').addClass("loaded").removeClass('ld');
-	   		}, 3000);
+	   		}, 1000);
 	});
 });
 $(document).ready(function(){
@@ -45,14 +45,7 @@ $(document).ready(function(){
 			$('li').find('div').each(function(){
 				$(this).css('background-color','hsla(4, 5%, 15%, 0.7)').find('h3').fadeIn('fast').addClass('floating');
 			});
-		}
-		// $(window).resize(function(){
-		// 	if($(window).width() < 500){
-		// 		$('li').find('div').each(function(){
-		// 			$(this).css('background-color','hsla(4, 5%, 15%, 0.7)').find('h3').fadeIn('fast').addClass('floating');
-		// 		});
-		// 	}
-		// });		
+		}			
 	}	
 });
 function chek(){
