@@ -388,7 +388,7 @@ footer button:hover{
     position: relative;
     width: 100%;
     margin-top: 5%;
-    color: #F07ADD;
+    color: #3155F5;
     text-shadow: 1px 1px black;
 }
 .subSect h3{
@@ -465,7 +465,7 @@ footer button:hover{
     -moz-transition: all 0.3s linear 0s, color 0.3s linear 0s;
     -webkit-transition: all 0.3s linear 0s, color 0.3s linear 0s;
     transition: all 0.3s linear 0s, color 0.3s linear 0s;
-    color: #E3A1F4;
+    color: red;
 }
 #home button:hover{
     background: white;
