@@ -1,4 +1,4 @@
-<?php 
+<?php
   include ('config/db_config.php');
 ?>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript">
-          if(sessionStorage.getItem("pass") === null){window.location.replace("404.html");}
+          if(sessionStorage.getItem("pass") === null){window.location.replace("404.php");}
           else if (localStorage.getItem("used") === sessionStorage.getItem("item")){window.location.replace("accessdenied.html");}
           localStorage.setItem("used",sessionStorage.getItem("item"));
         </script>
@@ -40,7 +40,7 @@
           </div>
            <div class="row">
             <div class="col-sm-6">
-              <div class="form-group">          
+              <div class="form-group">
                 <label for="fname">FirstName</label>
                <input type="text" id="fname" name="fname" class="form-control" placeholder="First Name">
               </div>
@@ -48,7 +48,7 @@
                   <label for="lname">LastName</label>
                  <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name">
               </div>
-              <div class="form-group">          
+              <div class="form-group">
                   <label for="email">Email</label>
                  <input type="email" id="email" name="email" class="form-control" placeholder="Email">
               </div>
@@ -56,7 +56,7 @@
             <div class="col-sm-6">
               <div class="meal">
                 <h4>Course Selection</h4>
-              </div>            
+              </div>
               <div class="form-group">
                 <label for="ft">Meal choice</label>
                 <select name="food" id="ft" class="form-control">
@@ -75,16 +75,16 @@
                 <label>Message for the Bride and Groom</label>
                   <textarea name="message" id="message" name="message"></textarea>
               </div>
-             </div>   
-          </div> 
+             </div>
+          </div>
          </div>
          <div class="col-sm-6">
           <div class="row">
             <div class="col-sm-12" id="gi">
               <div class="gont">
-                
+
                 </div>
-              </div>    
+              </div>
             </div>
           </div>
          </div>
