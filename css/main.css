@@ -64,7 +64,7 @@ body,html{
    left: 5px;
    right: 5px;
    bottom: 5px;
-   border:3px solid transparent; 
+   border:3px solid transparent;
    border-top-color: #D861F7;
    border-radius: 50%;
    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -77,7 +77,7 @@ body,html{
    left: 15px;
    right: 15px;
    bottom: 15px;
-   border:3px solid transparent; 
+   border:3px solid transparent;
    border-top-color: #2B46A5;
    border-radius: 50%;
    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -89,7 +89,7 @@ body,html{
     -ms-transform: rotate(0deg);  /* IE 9 */
     transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
   }
-  
+
   100% {
     -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(360deg);  /* IE 9 */
@@ -102,7 +102,7 @@ body,html{
     -ms-transform: rotate(0deg);  /* IE 9 */
     transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
   }
-  
+
   100% {
     -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(360deg);  /* IE 9 */
@@ -115,7 +115,7 @@ body,html{
     width: 51%;
     height: 100%;
     background: #222;
-    z-index: 99999; 
+    z-index: 99999;
 }
 #loader-wrapper .loader-section.section-left{
     left:0;
@@ -360,7 +360,7 @@ footer button:hover{
     justify-content: center;
     background: rgba(255, 255, 255, 0.7);
     z-index: 5000;
-    
+
 }
 .bottitle h1{
     font-family: 'Great Vibes', cursive;
@@ -413,7 +413,6 @@ footer button:hover{
 }
 #home_overlay, .conpos{
     width: 100%;
-    min-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -425,7 +424,7 @@ footer button:hover{
 #pages .pagestitle{
     position: absolute;
     width: 100%;
-    z-index: 5000;    
+    z-index: 5000;
     background: rgba(255, 255, 255, 0.7);
 }
 #pages .pagestitle h3{
@@ -453,7 +452,7 @@ footer button:hover{
     top: 50%;
     left: 70%;
 }
-#pages #ja{    
+#pages #ja{
     top: 50%;
     left: 15%;
 }
