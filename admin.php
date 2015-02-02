@@ -37,7 +37,7 @@
            <h2 class="panel-title">Reports</h2>
          </div>
          <div class="panel-body">
-           <table class="table table-stripped table-hover" id="report">
+           <table class="table table-bordered table-hover" id="report">
              <thead>
                <tr>
                  <th>ID</th>
@@ -69,9 +69,10 @@
              <?php
               $query = $handler->query('SELECT * FROM specialg');
               // fetches the data and stores it as an object
+              $count = 1;
               while($r = $query->fetch(PDO::FETCH_OBJ)){
                 echo '<tr>';
-                  echo '<td>', $r->sqid,  '</td>';
+                  echo '<td>', $count,  '</td>';
                   echo '<td>', $r->fname, '</td>';
                   echo '<td>', $r->lname, '</td>';
                   echo '<td>', $r->email, '</td>';
@@ -95,6 +96,7 @@
                   echo '<td>', $r->g5mchoice, '</td>';
                   echo '<td>', $r->g5allergies, '</td>';
                 echo '</tr>';
+                $count++;
               }
               $handler = null ;
              ?>
