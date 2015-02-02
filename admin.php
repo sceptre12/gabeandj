@@ -1,5 +1,5 @@
 <?php 
-  include ('config/db_config.php');
+  // include ('config/db_config.php');
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -29,7 +29,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-       <div class="jumbtron">
+       <div class="jumbotron">
          <h1>Admin Panel</h1>
        </div>
        <div class="panel panel-default">

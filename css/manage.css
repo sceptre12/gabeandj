@@ -1,3 +1,20 @@
+body#admin{
+	background:#F9E4AD;
+	color: #31152B;
+}
+#admin .panel-heading{
+	background: #CC4452;
+}
+#admin h2{
+	font-size: 3vw;
+}
+#admin .panel-body{
+	background: #723147;
+}
+#admin .jumbotron{
+	background:#E6B098;
+}
 #admin .panel-body{
 	overflow-x: scroll;
+	color: #F9E4AD;
 }
