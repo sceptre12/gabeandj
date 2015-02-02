@@ -49,23 +49,29 @@ $(document).ready(function(){
 	}	
 });
 function chek(){
-	var inform = JSON.parse(sessionStorage.getItem("info"));
-	var found = false;
-	for(var a = 0; a < inform.length; a++){
-		if($("#guestc").val() === inform[a]){
-			found = true;
-			sessionStorage.clear();
-			sessionStorage.setItem("item", inform[a]);
-		}
-	}
-	if( !(found === true)){
+	if($("#guestc").val() === "adminJanelle"){
 		event.preventDefault();
-		$('#hd').css('opacity','1');
-		$('#hd').fadeTo(600, 0);
-	}
-	else{	
-			sessionStorage.setItem("pass", "true");			
+		window.location.replace("admin.php");
+		sessionStorage.setItem("auth",true);
+	}else{
+		var inform = JSON.parse(sessionStorage.getItem("info"));
+		var found = false;
+		for(var a = 0; a < inform.length; a++){
+			if($("#guestc").val() === inform[a]){
+				found = true;
+				sessionStorage.clear();
+				sessionStorage.setItem("item", inform[a]);
+			}
 		}	
+		if( !(found === true)){
+			event.preventDefault();
+			$('#hd').css('opacity','1');
+			$('#hd').fadeTo(600, 0);
+		}	
+		else{	
+				sessionStorage.setItem("pass", "true");			
+			}
+	}		
 }
 // smooth scrolling
 $('a[href*=#]:not([href=#])').click(function() {
