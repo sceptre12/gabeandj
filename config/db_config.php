@@ -1,9 +1,5 @@
 <?php
-	$host = "localhost";
-	$dbname ="gabeandj";
-	$user = "gbjanelle";
-	$pass = "@Encore124";
-	$port = "3306";
+	
 
 
 	try{
